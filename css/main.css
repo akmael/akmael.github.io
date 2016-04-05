@@ -15,7 +15,7 @@ body{
 /*sidebar*/
 .sidebar{
   width: 300px;
-  height: 1000px;
+  height: 1150px;
   background-color: #11171c;
   padding:10px;
   color:#fff;
@@ -56,12 +56,35 @@ body{
 .navLinks{
   padding-left: 50px;
 
+
+}
+ul{
+  list-style: none;
 }
 #work{ color: #d35136;}
 #contact{ color: #27b599;}
 #about{ color: #088ecc;}
+/*content*/
 
+.portfolio-info{
 
+  float: left;
+  background-color:#f7f7f7;
+  width: 500px;
+  height: 300px;
+}
+.portfolio-item{
+
+  float:left;
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+}
+.portfolio-item img{
+  width:500px;
+  height: 300px;
+  padding: 20px;
+}
 
 
 /*breakpoints*/
