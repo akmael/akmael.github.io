@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app='portfolioPage'>
   <head>
     <meta charset="utf-8">
     <title>theLetterA</title>
@@ -8,6 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-route.js"></script>
     <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
@@ -32,8 +34,8 @@
                 <div class="col-sm-12 navLinks">
                   <h3 id="work"><i class="fa fa-briefcase"></i>&nbsp; Work</h3>
                   <ul>
-                    <li>Web Design</li>
-                    <li>Videography</li>
+                    <a href="#/web"><li>Web Design</li></a>
+                    <a href="#/video"><li>Video</li></a>
                     <li>Photography</li>
                   </ul>
                   <h3 id='contact'><i class="fa fa-mobile"></i>&nbsp;Contact</h3>
@@ -53,43 +55,15 @@
         </div>
 
 
-
-
-        <!-- content  -->
-        
-        <div class="row">
-          <div class="col-md-6 portfolio-info">
-            <h2>The Hip Hop collective site v.3</h2>
-            <h3>Web</h3>
-            <h4>Html-Css3-Jquery</h4>
-          </div>
-          <div class="col-md-6 portfolio-item">
-            <img src="img/hhc.png" alt="">
-          </div>
-          <div class="col-md-6 portfolio-info">
-            <h2>PicPick-Group Project</h2>
-            <h3>Web</h3>
-            <h4>Html-Css3-angular</h4>
-          </div>
-          <div class="col-md-6 portfolio-item">
-            <img src="img/picpick.png" alt="">
-          </div>
-          <div class="col-md-6 portfolio-info">
-            <h2>To Chill or Not to Chill</h2>
-            <h3>Web</h3>
-            <h4>Html-Css3-Jquery</h4>
-          </div>
-          <div class="col-md-6 portfolio-item">
-            <img src="img/weatherapp.png" alt="">
-          </div>
-        </div>
-
+            <ng-view></ng-view>
 
 
 
     </div>
 
 
+  <script type="text/javascript" src='js/app.js'>
 
+  </script>
   </body>
 </html>

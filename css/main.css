@@ -1,5 +1,8 @@
-body{
-  font-family: 'Abel', sans-serif;
+html, body {
+    height: 100%;
+    font-family: 'Abel', sans-serif;
+    min-width: 500px;
+    overflow: auto;
 }
 /*logo styles*/
 
@@ -14,12 +17,14 @@ body{
 
 /*sidebar*/
 .sidebar{
+  position: fixed;
   width: 300px;
-  height: 1150px;
+  min-height: 100%;
   background-color: #11171c;
   padding:10px;
   color:#fff;
   float:left;
+  z-index: 100;
 
 
 }
@@ -27,12 +32,12 @@ body{
 
 
 .picholder{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 100px;
   background-color: #fff;
   margin: 0 auto;
-  margin-left:17%;
+  margin-left:25%;
 
 }
 .icons{
@@ -70,35 +75,66 @@ ul{
 
   float: left;
   background-color:#f7f7f7;
-  width: 500px;
-  height: 300px;
+  width: 300px;
+  height: 610px;
+  margin-left: 320px;
+  border-right: solid gray 3px;
 }
 .portfolio-item{
 
   float:left;
-  width: 500px;
-  height: 300px;
+  width: 300px;
+  height: 610px;
   background-color: #fff;
 }
 .portfolio-item img{
-  width:500px;
-  height: 300px;
+  width: 610px;
+  height: 400px;
   padding: 20px;
+  margin-bottom: 5px;
+  margin-left: 70px;
 }
-
+.portfolio-item iframe{
+  width: 610px;
+  height: 400px;
+  padding: 20px;
+  margin-bottom: 5px;
+  margin-left: 70px;
+}
 
 /*breakpoints*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
     .sidebar{
       float: none;
       width: 100%;
+      position: relative;
+
 
     }
+    .portfolio-info{
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .portfolio-item{
+      width: 100%;
+    }
+    .portfolio-item img{
+      margin-left: 0;
+      margin-bottom: 0;
+      width:100%;
+
+
+    }
+
+
     #heading{
       float:none;
       margin-left: 25%;
       font-size: 0.5em;
 
+
     }
+
 }
