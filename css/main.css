@@ -94,6 +94,13 @@ ul{
   margin-bottom: 5px;
   margin-left: 70px;
 }
+#portfolio-item-amazon{
+
+  padding: 20px;
+  margin-bottom: 5px;
+  margin-left: 70px;
+
+}
 .portfolio-item iframe{
   width: 610px;
   height: 400px;
@@ -127,6 +134,7 @@ ul{
 
 
     }
+
 
 
     #heading{
