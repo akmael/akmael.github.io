@@ -60,9 +60,8 @@ html, body {
 }
 .navLinks{
   padding-left: 50px;
-
-
 }
+ a { text-decoration: none; }
 ul{
   list-style: none;
 }
